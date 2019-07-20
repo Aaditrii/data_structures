@@ -28,7 +28,7 @@ int main(int argc,const char *argv[])
 
 		}
 	}
-	printf("%d\t",max);
+	printf("%d\n",max);
 	int count=0;
 	int l1;
 	int f=0;
@@ -51,12 +51,9 @@ int main(int argc,const char *argv[])
 				{
 					printf("%d\t",arr1[i1]);
 				}
-				f=1;
-				break;
+				printf("\n");
 			}
 		}
-		if(f==1)
-			break;
 	}
 
 	return 0;
