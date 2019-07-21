@@ -2,7 +2,7 @@
 #include<stdlib.h>
 int main(int argc,const char *argv[])
 {
-	int k=0,count,arr[100],count1=0,count2=0;
+	int k=0,count,arr[100],count1=0;
 	count=argc-1;
 	for(int i=1;i<argc;i++)
 	{
