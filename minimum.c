@@ -1,7 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
-int find_minimum(int arr[],int low,int high)
-{
+int find_minimum(int arr[],int low,int high){
 	if(low>high)
 		return arr[0];
 	if(low==high)
@@ -15,8 +14,7 @@ int find_minimum(int arr[],int low,int high)
 		return find_minimum(arr,mid+1,high);
 	return find_minimum(arr,low,mid-1);
 }
-int main(int argc,const char *argv[])
-{
+int main(int argc,const char *argv[]){
 	int arr[20],k=0;
 	for(int i=1;i<argc;i++)
 		arr[k++]=atoi(argv[i]);
