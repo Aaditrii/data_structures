@@ -2,22 +2,22 @@
 #include<cstring>
 using namespace std;
 void insert_string(string str1,string str2,int n,int n1,int d){
-	char a[30],b[30],c[30],d1[30];
-	int k=0,l=0;
-	strcpy(a,str1.c_str());
-	strcpy(b,str2.c_str());
-	n=n+n1;
-	for(int i=0;i<n;i++){
-		if(i<d)
-			c[l++]=a[i];
-		else
-			d1[k++]=a[i];
+char a[30],b[30],c[30];
+int k=0;
+strcpy(a,str1.c_str());
+strcpy(b,str2.c_str());
+strcpy(c,a);
+cout<<n;
+for(int i=d;i<n+n1;i++){
+	a[i+n1]=c[i];
+	if(k<n1){
+		a[i]=b[k++];
 	}
-	strcat(c,b);
-	strcat(c,d1);
-	cout<<c;
 }
-
+int l=strlen(a);
+cout<<l;
+cout<<a;
+}
 int main(){
 	string str1,str2;
 	int d,n,n1;
