@@ -13,8 +13,8 @@ void get_union(int arr1[100],int arr2[100],int n1,int n2){
 			j++;
 		}
 		else{
-			cout<<arr[i++]<<" ";
-			j++;
+			cout<<arr2[j++]<<" ";
+			i++;
 		}
 	}
 	while(i<n1){
