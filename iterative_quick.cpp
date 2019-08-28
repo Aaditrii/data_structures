@@ -1,6 +1,5 @@
 #include<iostream>
 #include<cstdlib>
-#include<time.h>
 using namespace std;
 void swap(int *num1,int *num2){
 	int t;
@@ -43,7 +42,6 @@ int main(int argc,const char *argv[]){
 	int arr[100],k=0;
 	for(int i=1;i<argc;i++)
 		arr[k++]=atoi(argv[i]);
-	srand(time(0));
 	quick_sort(arr,k);
 	for(int i=0;i<k;i++)
 		cout<<arr[i]<<" ";
