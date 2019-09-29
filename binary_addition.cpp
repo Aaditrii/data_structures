@@ -6,8 +6,8 @@ void binary_add(int arr1[100],int arr2[100],int n){
 	for(int i=n-1;i>=0;i--){
 		if((arr1[i]==0&&arr2[i]==1)||(arr1[i]==1&&arr2[i]==0)){
 			if(c==1&&i==0){
-				a[k]=0;
-				a[k+1]=1;
+				a[k++]=0;
+				a[k++]=1;
 			}
 			else if(c==1){
 				a[k++]=0;
